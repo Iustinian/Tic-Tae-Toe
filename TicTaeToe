@@ -1,19 +1,19 @@
 
 int main() {
-    
-    vector<vector<char>> board(3, vector<char>(3, ' ')); 
-    char currentPlayer = 'X'; 
 
-    cout << "Tic-Tac-Toe Game" << endl;
+    vector<vector<char>> board(3, vector<char>(3, ' ')); 
+    char currentPlayer = 'X';                             
+
+    cout << "Tic-Tac-Toe Game" << endl;   
 
     while (true) {
-        cout << "Current Board:" << endl;
+        cout << "Current Board:" << endl; 
         drawBoard(board);
 
         
         int row, col;
         cout << "Player " << currentPlayer << ", enter row (0, 1, 2) and column (0, 1, 2) separated by a space: ";
-        cin >> row >> col;
+        cin >> row >> col; 
 
         
         if (row >= 0 && row < 3 && col >= 0 && col < 3 && board[row][col] == ' ') {
